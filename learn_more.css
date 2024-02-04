@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600&display=swap');
+:root{
+    --black:#000000;
+    --gold: #ffcc99;
+}
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background: #c50d0d;
+    color: #fff;
+}
+
+.heading{
+    display: flex;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: whitesmoke;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+
+}
+.heading h1{
+    font-size: 50px;
+    color: #c50d0d;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--gold); 
+}
+.heading p{
+    font-size: 18px;
+    color: rgb(80, 0, 0);
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about,
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-video,
+.about-video-2{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-video video,
+.about-video-2 video{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-video:hover video,
+.about-video-2:hover video{
+    transform: scale(1.2);
+}
+.about-content,
+.about-content-2{
+    flex: 1;
+}
+.about-content h2,
+.about-content-2 h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #b87272;
+}
+.about-content p,
+.about-content-2 p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #100202;
+}
+.about-content-2 span{
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(154, 30, 30);
+}
+
+.footer .credit {
+    padding: 2rem 0.1rem;
+    border-top: 1px solid rgba(0,0, 0, .1);
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.footer .credit span{
+    color: rgb(180, 36, 36);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size:  36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about,
+    .container-2{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-video,
+    .about-video-2 {
+        font-size: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p,
+    .about-content-2 p{
+        padding: 0px;
+        font-size: 16px;
+    }
+}
+
